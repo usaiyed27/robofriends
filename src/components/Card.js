@@ -1,19 +1,14 @@
 import React from 'react';
+import { robots } from '../robots';
 
-const Card = (props) =>{
-	const { id, name, email } = props;
+const Card = ({ id, name, email }) => {
 	return(
-		<div className='bg-light-green dib br3 pa3 ma2 grow bw2 shadow-5'>
-			{/*to add dynamic images add convert src
-				to string and add the id props to it.
-			*/}
-			<img src={`https://robohash.org/${props.id}?200x200" alt="robots`} />
-		<div>
-			<h2>{name}</h2>
-			<p>{email}</p>
-		</div>
-		</div>
-	);
+		<div className='tc bg-light-green dib pa3 ma2 br2 grow bw2 shadow-5'>
+		 <img alt='robot' src={`https://robohash.org/${id}?200x200`}/>
+		 <h2>{name}</h2>
+		 <p>{email}</p>
+		 </div>
+	)
 }
 
-export default Card;
+export default Card

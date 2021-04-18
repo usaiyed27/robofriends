@@ -32,7 +32,7 @@ const App = () => {
       (
         <div className='tc'>
           {/*<h1 className='f1'>RoboFriends</h1>*/}
-          <SearchBox onInputChange={this.onInputChange}/>
+          {/*<SearchBox onInputChange={this.onInputChange}/>*/}
           <Scroll>
             <CardList robots={filteredRobots} />
           </Scroll>
